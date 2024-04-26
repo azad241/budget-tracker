@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="box">
+        <h1>Budget Tracker</h1>
+        <div style="display: flex; flex-direction: row; gap: 10px;">
+            <input type="number" id="amount" placeholder="Enter Amount">
+            <button onclick="addTransaction()">Add</button>
+        </div>
+        <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+            <h2>Income: <span id="total-income">0</span></h2>
+            <h2>Expense: <span id="total-expense">0</span></h2>
+        </div>
+        <h3>Recently Added</h3>
+        <ul id="transaction-list"></ul>
+    </div>
+    <!-- <div style="display: flex; justify-content: center;"><a style="font-size: 20px;border: 2px solid #f8f8f8; text-decoration: none;"  href="/budget-tracker/budget-tracker.tar.gz">Download This Project</a></div> -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
